@@ -64,12 +64,16 @@ html {
 */
 
 #leftTextContainer {
-  max-width: 450px;
-  min-height: 200px;
+  width: 60vw;
   padding-top: 10vh;
-/*  background-color: red;*/
   margin: auto;
   background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+  #leftTextContainer {
+    width: 90vw;
+  }
 }
 
 #installationTitleContainer {
@@ -77,6 +81,13 @@ html {
   margin: auto;
   text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+  #installationTitleContainer {
+    width: 60vw;
+  }
+}
+
 
 #installationTitle {
   color: white; 
@@ -104,10 +115,9 @@ html {
 }
 
 #installTargetsContainer {
-  max-width: 300px;
-  min-height: 50px;
   margin: auto;
-  margin-top: 20px;
+  padding-top: 20px;
+  width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
