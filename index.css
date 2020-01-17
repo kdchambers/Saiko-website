@@ -1,11 +1,6 @@
 html, body {
   margin: 0px;
-}
-
-body {
   padding: 0px;
-  margin: 0px;
-  background-color: black;
 }
 
 p, span {
@@ -15,7 +10,7 @@ p, span {
 
 p {
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 16pt;
 }
 
 #title {
@@ -25,26 +20,21 @@ p {
   font-size: 26pt;
   font-family: 'Roboto';
   font-weight: 300;
-  background-color: red;
 }
 
 html { 
-/*
   background: url(assets/saiko_2_cropped_blur.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-*/
 }
 
 #mainContent {
   margin: 0px;
   padding: 0px;
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  background-image: url(assets/saiko_2_cropped_blur.png);*/
-/*  background-size: 100% 100%;*/
+  width: 100%;
+  height: 100%;
 }
 
 #mainOverlay {
@@ -52,7 +42,6 @@ html {
   padding: 0px;
 }
 
-/*
 #mainOverlay {
   position: absolute;
   margin: 0px;
@@ -61,14 +50,13 @@ html {
   height: 100%;
   background-color: rgba(0,0,0,0.6);
 }
-*/
 
 #leftTextContainer {
-/*  width: 60vw;*/
-  width: 400px;
-  padding-top: 10vh;
+  width: 60vh;
+  max-width: 600px;
+  padding-top: 20vh;
   margin: auto;
-  background-color: blue;
+/*  background-color: blue;*/
 }
 
 @media only screen and (max-width: 600px) {
@@ -78,8 +66,9 @@ html {
 }
 
 #installationTitleContainer {
-  min-width: 50px;
+  padding-top: 100px;
   margin: auto;
+/*  background-color: blue;*/
   text-align: center;
 }
 
@@ -95,10 +84,7 @@ html {
 }
 
 .installTargetImage {
-  width: 35px;
-  height: 35px;
-  margin-left: 4px;
-  margin-top: 4px;
+  margin: auto;
 }
 
 .leftText {
@@ -118,7 +104,10 @@ html {
 #installTargetsContainer {
   margin: auto;
   padding-top: 20px;
-  width: 200px;
+  
+  width: 80%;
+  max-width: 500px;
+  
   display: flex;
   flex-direction: row;
   justify-content: space-around;
