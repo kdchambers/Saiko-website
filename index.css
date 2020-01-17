@@ -64,7 +64,8 @@ html {
 */
 
 #leftTextContainer {
-  width: 60vw;
+/*  width: 60vw;*/
+  width: 400px;
   padding-top: 10vh;
   margin: auto;
   background-color: blue;
@@ -72,7 +73,7 @@ html {
 
 @media only screen and (max-width: 600px) {
   #leftTextContainer {
-    width: 90vw;
+    width: 95vw;
   }
 }
 
@@ -123,3 +124,13 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), 
+       only screen and (-o-min-device-pixel-ratio: 2/1), 
+       only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-device-pixel-ratio: 2) {
+         
+         #installTargetsContainer {
+           width: 600px;
+         }
+}   
